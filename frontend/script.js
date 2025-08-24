@@ -4,7 +4,7 @@ const newQuoteButton = document.getElementById('new-quote-button');
 
 async function fetchAndDisplayQuote() {
     try {
-        const response = await fetch('http://127.0.0.1:3000/');
+        const response = await fetch('https://afatmaa-quote-generator-backend.hosting.codeyourfuture.io/');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
