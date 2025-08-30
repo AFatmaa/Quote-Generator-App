@@ -12,6 +12,24 @@
         <p id="author-display" class="quote-author"></p>
     </div>
     <button id="new-quote-button">Get New Quote</button>
+
+    <!-- Add a form to the frontend which allows users to add quotes to the backend’s list of quotes -->
+    <div class="add-quote-container">
+        <h2>Add a New Quote</h2>
+        <form id="add-quote-form">
+            <div>
+                <label for="quote-input">Quote:</label>
+                <textarea id="quote-input" rows="4" required></textarea>
+            </div>
+            <div>
+                <label for="author-input">Author:</label>
+                <input type="text" id="author-input" required>
+            </div>
+            <button type="submit">Add Quote</button>
+        </form>
+        <p id="feedback-message"></p>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
